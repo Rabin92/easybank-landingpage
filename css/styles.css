@@ -480,7 +480,7 @@ button {
   border-radius: 2em;
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   color: #fff;
-  font-weight: 700;
+  font-weight: 300;
   cursor: pointer;
 }
 .btn:hover {
