@@ -1,0 +1,50 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-url--primary: 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap';
+$font-family--primary: 'Public Sans', sans-serif;
+
+// Font Weights
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+
+// Descriptive Base Colors
+$white: #fff;
+$black: #000;
+$martinique: #2d314d;
+$emerald: #31d35c;
+$scooter: #2bb7da;
+$manatee: #9698a6;
+$athensGray: #f3f4f6;
+$alabaster: #fafafa;
+
+// Color Usage
+$primary-col: $martinique;
+$secondary-col: $manatee;
+$gradient--one: $emerald;
+$gradient--two: $scooter;
+$body--col: $alabaster;
+$hero--bk: $alabaster;
+
+// Text
+$base__font-size: 18px;
+$base__line: 24px;
+$text--center: center;
+
+// Path to Assets
+$path--rel: '../images';
+
+// Gutters
+$gutters: 1em;
+
+// Cursor
+$cursor: pointer;
+
+// Media queries
+$break--s: '(min-width: 33.333em)';
+$break--m: '(min-width: 42.666em)';
+$break--l: '(min-width: 56.888em)';
+$break--xl: '(min-width: 88.888em)';

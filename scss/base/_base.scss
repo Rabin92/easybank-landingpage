@@ -1,0 +1,80 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family--primary;
+  background-color: $body--col;
+  font-weight: $font-weight--light;
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+
+  @media #{$break--l} {
+    padding-top: 101px;
+  }
+}
+
+header {
+  background-color: $alabaster;
+
+  @media #{$break--s} {
+    margin-bottom: em(3px);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  }
+
+  @media #{$break--l} {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+footer {
+  background-color: $primary-col;
+}
+
+h1,
+h2,
+h3 {
+  color: $primary-col;
+  font-weight: $font-weight--light;
+  margin: 0 0 20px;
+}
+
+p {
+  color: $secondary-col;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: $athensGray;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Lists
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Button
+button {
+  outline: 0;
+  border: none;
+}

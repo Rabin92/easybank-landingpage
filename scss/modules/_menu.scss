@@ -1,0 +1,25 @@
+// ==========================================================================
+// Menu
+// ==========================================================================
+
+.menu {
+  cursor: $cursor;
+
+  @include e(first) {
+    margin-bottom: 0.2em;
+    @extend %menu;
+  }
+
+  @include e(middle) {
+    margin-bottom: 0.2em;
+    @extend %menu;
+  }
+
+  @include e(third) {
+    @extend %menu;
+  }
+
+  @media #{$break--l} {
+    display: none;
+  }
+}

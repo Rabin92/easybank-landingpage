@@ -1,0 +1,57 @@
+// ==========================================================================
+// Article Section
+// ==========================================================================
+.article {
+  padding: $gutters $gutters 2em;
+
+  @include e(header) {
+    text-align: $text--center;
+    margin: em(50px) em(0px) em(20px);
+
+    @media #{$break--m} {
+      text-align: initial;
+      margin: em(0px) em(0px) em(20px);
+    }
+  }
+
+  @include e(sec) {
+    border-radius: em(10px);
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    margin-bottom: em(20px);
+  }
+
+  @include e(image) {
+    border-radius: em(10px) em(10px) em(0px) em(0px);
+    opacity: 0.6;
+    height: em(173.383px);
+    width: em(280.083px);
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
+  @include e(container) {
+    padding: $gutters;
+  }
+
+  @include e(author) {
+    font-size: em(12px);
+    margin-bottom: em(10px);
+  }
+
+  @include e(title) {
+    margin-bottom: em(8px);
+
+    a {
+      color: $primary-col;
+
+      &:hover {
+        color: lighten(#31d35c, 20%);
+        transition: color 0.2s ease-in-out;
+      }
+    }
+  }
+}

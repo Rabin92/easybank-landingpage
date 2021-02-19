@@ -1,0 +1,34 @@
+// ==========================================================================
+// Card Section
+// ==========================================================================
+.card {
+  padding: $gutters $gutters 2em;
+  text-align: $text--center;
+  background-color: $athensGray;
+
+  @media #{$break--m} {
+    text-align: initial;
+  }
+
+  @include e(title) {
+    font-weight: $font-weight--medium;
+  }
+
+  @include e(copy) {
+    @media #{$break--m} {
+      width: 38em;
+    }
+  }
+
+  @include e(sec) {
+    margin-top: em(50px);
+  }
+
+  @include e(icon) {
+    margin-bottom: em(25px);
+  }
+}
+
+.grid-container {
+  @include grid();
+}

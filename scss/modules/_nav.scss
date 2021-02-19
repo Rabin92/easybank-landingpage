@@ -1,0 +1,45 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav {
+  display: none;
+
+  @media #{$break--m} {
+    display: none;
+  }
+}
+
+.nav-horizontal {
+  display: none;
+
+  @media #{$break--l} {
+    display: block;
+
+    .list .item {
+      display: inline-block;
+      padding-right: 1em;
+      position: relative;
+
+      &:hover::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 80%;
+        padding-bottom: em(30px);
+        border-style: solid;
+        border-image: linear-gradient(to right, $gradient--one, $gradient--two);
+        border-image-width: em(5px);
+        border-image-slice: 0 0 1 0;
+      }
+    }
+
+    .item a {
+      color: $secondary-col;
+
+      &:hover {
+        color: $primary-col;
+      }
+    }
+  }
+}

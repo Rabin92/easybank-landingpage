@@ -1,0 +1,70 @@
+// ==========================================================================
+// Footer Section
+// ==========================================================================
+.footer {
+  padding: 2.5em $gutters;
+  text-align: $text--center;
+
+  @media #{$break--m} {
+    @include flexy($j-content: space-between);
+    text-align: initial;
+  }
+
+  @include e(col-one) {
+    margin-bottom: em(40px);
+
+    @media #{$break--m} {
+      margin-bottom: initial;
+    }
+  }
+
+  @include e(site-logo) {
+    margin: em(35px) em(0px);
+
+    @media #{$break--m} {
+      margin: initial;
+    }
+  }
+
+  @include e(social-icons) {
+    @media #{$break--m} {
+      padding-top: em(45px);
+    }
+  }
+
+  @include e(item) {
+    display: inline-block;
+    padding-left: em(10px);
+
+    svg:hover path {
+      fill: $emerald;
+      transition: fill 0.2s ease-in-out;
+    }
+  }
+
+  @include e(col-four) {
+    margin-top: em(30px);
+
+    @media #{$break--m} {
+      @include flexy($f-dir: column, $a-items: flex-end);
+      margin-top: initial;
+    }
+  }
+
+  @include e(link) {
+    padding-bottom: em(20px);
+
+    a:hover {
+      color: $emerald;
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  @include e(copyright) {
+    margin-top: em(40px);
+
+    @media #{$break--m} {
+      margin-top: initial;
+    }
+  }
+}

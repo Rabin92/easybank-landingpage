@@ -1,0 +1,90 @@
+// ==========================================================================
+// Hero Section
+// ==========================================================================
+
+.container {
+  background-color: $hero--bk;
+}
+
+.hero {
+  padding-bottom: 4em;
+
+  @media #{$break--l} {
+    @include flexy();
+    padding-bottom: initial;
+  }
+
+  @include e(col-one) {
+    position: relative;
+    background: url('#{$path--rel}/bg-intro-mobile.svg') no-repeat center center;
+    background-size: cover;
+    min-height: 17.833em;
+
+    @media #{$break--l} {
+      background-image: none;
+      flex: 3;
+      order: 2;
+      height: em(500px);
+
+      &::before {
+        @media #{$break--l} {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 150%;
+          background: url('#{$path--rel}/bg-intro-desktop.svg') no-repeat center
+            60%;
+          background-size: 100%;
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: url('#{$path--rel}/image-mockups.png') no-repeat center 90%;
+      background-size: cover;
+
+      @media #{$break--s} {
+        background-size: 50%;
+      }
+
+      @media #{$break--l} {
+        width: 120%;
+        background-position: center 82%;
+        left: 25%;
+        height: 126%;
+        background-size: 75%;
+      }
+    }
+  }
+
+  @include e(col-two) {
+    text-align: $text--center;
+    flex: 2;
+    order: 1;
+    padding-top: 2em;
+
+    @media #{$break--l} {
+      text-align: initial;
+      padding-top: initial;
+    }
+  }
+
+  @include e(header) {
+    @media #{$break--l} {
+      font-size: 2.889rem;
+    }
+  }
+
+  @include e(text) {
+    padding: $gutters;
+    margin-bottom: em(40px);
+
+    @media #{$break--l} {
+      padding: initial;
+    }
+  }
+}
