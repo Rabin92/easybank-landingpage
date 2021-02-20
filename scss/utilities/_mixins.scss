@@ -29,3 +29,13 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2em;
 }
+
+// nav hover underline
+@mixin nav() {
+  content: '';
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-image: linear-gradient(to right, $gradient--one, $gradient--two);
+  border-image-slice: 0 0 1 0;
+}
