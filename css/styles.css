@@ -499,9 +499,12 @@ button {
 }
 
 .card {
-  padding: 1em 1em 2em;
+  padding: 3em 1em 2em;
   text-align: center;
   background-color: #f3f4f6;
+}
+.card__sec {
+  margin-bottom: 3em;
 }
 @media (min-width: 42.666em) {
   .card {
@@ -516,9 +519,6 @@ button {
     width: 38em;
   }
 }
-.card__sec {
-  margin-top: 2.7777777778em;
-}
 .card__icon {
   margin-bottom: 1.3888888889em;
 }
@@ -530,13 +530,13 @@ button {
 }
 
 .article {
-  padding: 1em 1em 2em;
+  padding: 3em 1em 2em;
 }
 .article__header {
   text-align: center;
   margin: 2.7777777778em 0em 1.1111111111em;
 }
-@media (min-width: 42.666em) {
+@media (min-width: 33.333em) {
   .article__header {
     text-align: initial;
     margin: 0em 0em 1.1111111111em;
