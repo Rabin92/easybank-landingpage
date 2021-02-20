@@ -67,4 +67,18 @@
       margin-top: initial;
     }
   }
+
+  @include e(bottom) {
+    background-color: $alabaster;
+    text-align: $text--center;
+    padding: 0.45em;
+
+    a {
+      color: rgb(58, 96, 209);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
