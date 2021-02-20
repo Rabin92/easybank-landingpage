@@ -2,13 +2,13 @@
 // Article Section
 // ==========================================================================
 .article {
-  padding: $gutters $gutters 2em;
+  padding: 3em $gutters 2em;
 
   @include e(header) {
     text-align: $text--center;
     margin: em(50px) em(0px) em(20px);
 
-    @media #{$break--m} {
+    @media #{$break--s} {
       text-align: initial;
       margin: em(0px) em(0px) em(20px);
     }
