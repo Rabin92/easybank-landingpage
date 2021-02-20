@@ -2,9 +2,13 @@
 // Card Section
 // ==========================================================================
 .card {
-  padding: $gutters $gutters 2em;
+  padding: 3em $gutters 2em;
   text-align: $text--center;
   background-color: $athensGray;
+
+  @include e(sec) {
+    margin-bottom: 3em;
+  }
 
   @media #{$break--m} {
     text-align: initial;
@@ -18,10 +22,6 @@
     @media #{$break--m} {
       width: 38em;
     }
-  }
-
-  @include e(sec) {
-    margin-top: em(50px);
   }
 
   @include e(icon) {
