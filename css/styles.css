@@ -421,7 +421,6 @@ button {
 }
 
 .nav {
-  display: none;
   background-image: linear-gradient(to bottom, rgba(49, 52, 80, 0.9), rgba(43, 183, 218, 0.1));
   position: fixed;
   left: 0;
@@ -703,6 +702,17 @@ button {
   .footer__copyright {
     margin-top: initial;
   }
+}
+.footer__bottom {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 0.45em;
+}
+.footer__bottom a {
+  color: #3a60d1;
+}
+.footer__bottom a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
