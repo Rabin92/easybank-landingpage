@@ -551,12 +551,8 @@ button {
 .article__image {
   border-radius: 0.5555555556em 0.5555555556em 0em 0em;
   opacity: 0.6;
-}
-@media (min-width: 33.333em) {
-  .article__image {
-    height: 9.6323888889em;
-    width: 15.5601666667em;
-  }
+  height: 9.6323888889em;
+  width: 33.3333333333em;
 }
 .article__image:hover {
   opacity: 1;
