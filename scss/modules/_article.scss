@@ -25,10 +25,11 @@
     border-radius: em(10px) em(10px) em(0px) em(0px);
     opacity: 0.6;
 
-    @media #{$break--s} {
-      height: em(173.383px);
-      width: em(280.083px);
-    }
+    // height: em(173.383px);
+    // width: em(280.083px);
+
+    height: em(173.383px);
+    width: em(600px);
 
     &:hover {
       opacity: 1;
