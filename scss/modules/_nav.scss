@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .nav {
-  // display: none;
+  display: none;
 
   @media #{$break--l} {
     display: none;
@@ -12,7 +12,7 @@
   background-image: linear-gradient(
     to bottom,
     rgba(49, 52, 80, 0.9),
-    rgba(43, 183, 218, 0.2)
+    rgba(43, 183, 218, 0.1)
   );
   position: fixed;
   left: 0;
@@ -32,6 +32,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 2em;
     border-radius: 5px;
+    animation: slideDown 0.5s ease-in-out forwards;
   }
 
   @include e(item) {
@@ -91,5 +92,15 @@
         transition: opacity 0.5s ease-in-out;
       }
     }
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    transform: scale(1.2);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
