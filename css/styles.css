@@ -251,6 +251,7 @@ body {
 
 header {
   background-color: #fafafa;
+  position: relative;
 }
 @media (min-width: 33.333em) {
   header {
@@ -420,12 +421,55 @@ button {
 }
 
 .nav {
-  display: none;
+  background-image: linear-gradient(to bottom, rgba(49, 52, 80, 0.9), rgba(43, 183, 218, 0.2));
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 75px;
+  z-index: 2;
+  padding: 1em;
+  text-align: center;
+  min-height: 100vh;
 }
-@media (min-width: 42.666em) {
+@media (min-width: 56.888em) {
   .nav {
     display: none;
   }
+}
+@media (min-width: 56.888em) {
+  .nav {
+    display: none;
+  }
+}
+.nav__list {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2em;
+  border-radius: 5px;
+}
+.nav__item {
+  padding-bottom: 1.1111111111em;
+}
+.nav__item a {
+  color: #2d314d;
+  font-weight: 400;
+}
+.nav__item a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-image-slice: 0 0 1 0;
+  width: 7%;
+  right: 46%;
+  border-image-width: 0.1666666667em;
+  padding-bottom: 0.2222222222em;
+  opacity: 0;
+}
+.nav__item a:hover::after {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .nav-horizontal {
@@ -440,22 +484,28 @@ button {
     padding-right: 1em;
     position: relative;
   }
-  .nav-horizontal .list .item:hover::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 80%;
-    padding-bottom: 1.6666666667em;
-    border-style: solid;
-    border-image: linear-gradient(to right, #31d35c, #2bb7da);
-    border-image-width: 0.2777777778em;
-    border-image-slice: 0 0 1 0;
-  }
   .nav-horizontal .item a {
     color: #9698a6;
   }
   .nav-horizontal .item a:hover {
     color: #2d314d;
+  }
+  .nav-horizontal .item a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-image: linear-gradient(to right, #31d35c, #2bb7da);
+    border-image-slice: 0 0 1 0;
+    width: 80%;
+    border-image-width: 0.2777777778em;
+    padding-bottom: 1.6666666667em;
+    opacity: 0;
+  }
+  .nav-horizontal .item a:hover::after {
+    opacity: 1;
+    color: #2d314d;
+    transition: opacity 0.5s ease-in-out;
   }
 }
 
