@@ -23,6 +23,7 @@ body {
 
 header {
   background-color: $alabaster;
+  position: relative;
 
   @media #{$break--s} {
     margin-bottom: em(3px);
