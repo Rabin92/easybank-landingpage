@@ -7,8 +7,10 @@ menu.addEventListener('click', () => {
   if (nav.style.display === 'none') {
     nav.style.display = 'block';
     body.style.overflow = 'hidden';
+    menu.classList.add('active');
   } else {
     nav.style.display = 'none';
     body.style.overflow = 'visible';
+    menu.classList.remove('active');
   }
 });
